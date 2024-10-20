@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		3DEAD82E2CC5AD4B002E86C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DEAD8152CC5AD4A002E86C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DEAD81C2CC5AD4A002E86C9;
+			remoteInfo = FurniVision;
+		};
+		3DEAD8382CC5AD4B002E86C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DEAD8152CC5AD4A002E86C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DEAD81C2CC5AD4A002E86C9;
+			remoteInfo = FurniVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DEAD81D2CC5AD4A002E86C9 /* FurniVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurniVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DEAD82D2CC5AD4B002E86C9 /* FurniVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurniVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DEAD8372CC5AD4B002E86C9 /* FurniVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurniVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3DEAD81F2CC5AD4A002E86C9 /* FurniVision */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FurniVision;
+			sourceTree = "<group>";
+		};
+		3DEAD8302CC5AD4B002E86C9 /* FurniVisionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FurniVisionTests;
+			sourceTree = "<group>";
+		};
+		3DEAD83A2CC5AD4B002E86C9 /* FurniVisionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FurniVisionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DEAD81A2CC5AD4A002E86C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD82A2CC5AD4B002E86C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD8342CC5AD4B002E86C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DEAD8142CC5AD4A002E86C9 = {
+			isa = PBXGroup;
+			children = (
+				3DEAD81F2CC5AD4A002E86C9 /* FurniVision */,
+				3DEAD8302CC5AD4B002E86C9 /* FurniVisionTests */,
+				3DEAD83A2CC5AD4B002E86C9 /* FurniVisionUITests */,
+				3DEAD81E2CC5AD4A002E86C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DEAD81E2CC5AD4A002E86C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DEAD81D2CC5AD4A002E86C9 /* FurniVision.app */,
+				3DEAD82D2CC5AD4B002E86C9 /* FurniVisionTests.xctest */,
+				3DEAD8372CC5AD4B002E86C9 /* FurniVisionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DEAD81C2CC5AD4A002E86C9 /* FurniVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEAD8412CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVision" */;
+			buildPhases = (
+				3DEAD8192CC5AD4A002E86C9 /* Sources */,
+				3DEAD81A2CC5AD4A002E86C9 /* Frameworks */,
+				3DEAD81B2CC5AD4A002E86C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3DEAD81F2CC5AD4A002E86C9 /* FurniVision */,
+			);
+			name = FurniVision;
+			packageProductDependencies = (
+			);
+			productName = FurniVision;
+			productReference = 3DEAD81D2CC5AD4A002E86C9 /* FurniVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DEAD82C2CC5AD4B002E86C9 /* FurniVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEAD8442CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVisionTests" */;
+			buildPhases = (
+				3DEAD8292CC5AD4B002E86C9 /* Sources */,
+				3DEAD82A2CC5AD4B002E86C9 /* Frameworks */,
+				3DEAD82B2CC5AD4B002E86C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DEAD82F2CC5AD4B002E86C9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DEAD8302CC5AD4B002E86C9 /* FurniVisionTests */,
+			);
+			name = FurniVisionTests;
+			packageProductDependencies = (
+			);
+			productName = FurniVisionTests;
+			productReference = 3DEAD82D2CC5AD4B002E86C9 /* FurniVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DEAD8362CC5AD4B002E86C9 /* FurniVisionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEAD8472CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVisionUITests" */;
+			buildPhases = (
+				3DEAD8332CC5AD4B002E86C9 /* Sources */,
+				3DEAD8342CC5AD4B002E86C9 /* Frameworks */,
+				3DEAD8352CC5AD4B002E86C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DEAD8392CC5AD4B002E86C9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DEAD83A2CC5AD4B002E86C9 /* FurniVisionUITests */,
+			);
+			name = FurniVisionUITests;
+			packageProductDependencies = (
+			);
+			productName = FurniVisionUITests;
+			productReference = 3DEAD8372CC5AD4B002E86C9 /* FurniVisionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DEAD8152CC5AD4A002E86C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3DEAD81C2CC5AD4A002E86C9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3DEAD82C2CC5AD4B002E86C9 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3DEAD81C2CC5AD4A002E86C9;
+					};
+					3DEAD8362CC5AD4B002E86C9 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3DEAD81C2CC5AD4A002E86C9;
+					};
+				};
+			};
+			buildConfigurationList = 3DEAD8182CC5AD4A002E86C9 /* Build configuration list for PBXProject "FurniVision" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DEAD8142CC5AD4A002E86C9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DEAD81E2CC5AD4A002E86C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DEAD81C2CC5AD4A002E86C9 /* FurniVision */,
+				3DEAD82C2CC5AD4B002E86C9 /* FurniVisionTests */,
+				3DEAD8362CC5AD4B002E86C9 /* FurniVisionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DEAD81B2CC5AD4A002E86C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD82B2CC5AD4B002E86C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD8352CC5AD4B002E86C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DEAD8192CC5AD4A002E86C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD8292CC5AD4B002E86C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEAD8332CC5AD4B002E86C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DEAD82F2CC5AD4B002E86C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DEAD81C2CC5AD4A002E86C9 /* FurniVision */;
+			targetProxy = 3DEAD82E2CC5AD4B002E86C9 /* PBXContainerItemProxy */;
+		};
+		3DEAD8392CC5AD4B002E86C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DEAD81C2CC5AD4A002E86C9 /* FurniVision */;
+			targetProxy = 3DEAD8382CC5AD4B002E86C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DEAD83F2CC5AD4B002E86C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DEAD8402CC5AD4B002E86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DEAD8422CC5AD4B002E86C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FurniVision/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DEAD8432CC5AD4B002E86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FurniVision/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DEAD8452CC5AD4B002E86C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurniVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FurniVision";
+			};
+			name = Debug;
+		};
+		3DEAD8462CC5AD4B002E86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurniVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FurniVision";
+			};
+			name = Release;
+		};
+		3DEAD8482CC5AD4B002E86C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVisionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurniVision;
+			};
+			name = Debug;
+		};
+		3DEAD8492CC5AD4B002E86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboud.FurniVisionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurniVision;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DEAD8182CC5AD4A002E86C9 /* Build configuration list for PBXProject "FurniVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEAD83F2CC5AD4B002E86C9 /* Debug */,
+				3DEAD8402CC5AD4B002E86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEAD8412CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEAD8422CC5AD4B002E86C9 /* Debug */,
+				3DEAD8432CC5AD4B002E86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEAD8442CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEAD8452CC5AD4B002E86C9 /* Debug */,
+				3DEAD8462CC5AD4B002E86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEAD8472CC5AD4B002E86C9 /* Build configuration list for PBXNativeTarget "FurniVisionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEAD8482CC5AD4B002E86C9 /* Debug */,
+				3DEAD8492CC5AD4B002E86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DEAD8152CC5AD4A002E86C9 /* Project object */;
+}
