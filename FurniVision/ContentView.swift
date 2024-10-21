@@ -14,6 +14,7 @@ struct VideoPlayerView: View {
     var body: some View {
         VideoPlayer(player: player)
             .frame(width: 100, height: 100)
+            .allowsHitTesting(false) // Disable user interaction with the video
             .onAppear() {
                 player.play()
                 player.actionAtItemEnd = .none
@@ -38,11 +39,10 @@ struct ContentView: View {
                 Text("Furnish Your Vision!")
                     .font(.custom("Bebas Neue", size: 50))
                     .foregroundColor(.black)
-                    .padding(.top,30)
+                    .padding(.top, 30)
 
                 // Add Video Player here
                 VideoPlayerView(player: AVPlayer(url: Bundle.main.url(forResource: "rocking-chair", withExtension: "mp4")!))
-                    
 
                 Spacer()
                 
@@ -113,3 +113,4 @@ struct ContentView: View {
 #Preview {
     splashScreen()
 }
+
