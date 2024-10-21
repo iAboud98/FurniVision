@@ -49,7 +49,7 @@ struct ColorPage: View {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
-                        .background(Color(red: 150/255, green: 110/255, blue: 65/255)) // Original brown color
+                        .background(Color(red: 150/255, green: 110/255, blue: 65/255))
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         .overlay(
@@ -60,11 +60,12 @@ struct ColorPage: View {
             }
             .padding(.bottom, 20)
         }
-        .navigationTitle("Color Page")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true) 
     }
 }
 
 #Preview {
     ColorPage(selectedOption: "Chair")
 }
+
