@@ -101,8 +101,9 @@ struct ColorPage: View {
             }
             .padding(.bottom, 20)
         }
-        .navigationTitle("Color Page")
+        
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
     }
 
     func colorButton(color: Color) -> some View {
