@@ -10,6 +10,8 @@ import SwiftUI
 struct ColorPage: View {
     var selectedOption: String?
 
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack {
             Text("You selected: \(selectedOption ?? "None")")
@@ -25,8 +27,7 @@ struct ColorPage: View {
 
             HStack {
                 Button(action: {
-                    // Define action for the "Back" button
-                    // Use navigation logic to go back to the previous page
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Back")
                         .font(.custom("Bebas Neue", size: 20))
