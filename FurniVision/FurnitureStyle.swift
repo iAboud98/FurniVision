@@ -94,7 +94,7 @@ struct FurnitureStyle: View {
     }
     
     var furnitureStyles: [String] {
-        return ["Modern", "Vintage", "Rustic", "Industrial", "Minimalist", "Scandinavian", "Traditional", "Bohemian"]
+        return ["Modern", "Office", "Rustic","Industrial", "Traditional"]
     }
 }
 
