@@ -89,7 +89,7 @@ struct ColorPage: View {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
-                        .background(Color(red: 150/255, green: 110/255, blue: 65/255))
+                        .background(selectedColors.isEmpty ? Color.gray : Color(red: 150/255, green: 110/255, blue: 65/255))
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         .overlay(
@@ -97,6 +97,7 @@ struct ColorPage: View {
                                 .stroke(Color.black, lineWidth: 2)
                         )
                 }
+                .disabled(selectedColors.isEmpty)
             }
             .padding(.bottom, 20)
         }
@@ -104,7 +105,6 @@ struct ColorPage: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 
-    
     func colorButton(color: Color) -> some View {
         Button(action: {
             if selectedColors.contains(color) {
