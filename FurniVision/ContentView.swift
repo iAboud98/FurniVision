@@ -7,7 +7,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    // State to track the currently selected button
     @State private var selectedOption: String? = nil
 
     var body: some View {
@@ -60,7 +59,7 @@ struct ContentView: View {
                                         .stroke(Color.black, lineWidth: 2)
                                 )
                         }
-                        .disabled(selectedOption == nil) // Disable if no option is selected
+                        .disabled(selectedOption == nil)
                         .opacity(selectedOption == nil ? 0.5 : 1.0)
                         .padding(.horizontal)
                     }
@@ -73,9 +72,9 @@ struct ContentView: View {
     func createButton(title: String) -> some View {
         Button(action: {
             if selectedOption == title {
-                selectedOption = nil // Deselect if already selected
+                selectedOption = nil
             } else {
-                selectedOption = title // Select new option
+                selectedOption = title
             }
         }) {
             Text(title)
