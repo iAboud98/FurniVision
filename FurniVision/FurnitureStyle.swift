@@ -22,7 +22,6 @@ struct FurnitureStyle: View {
             VStack(spacing: 20) {
                 ForEach(furnitureStyles, id: \.self) { style in
                     Button(action: {
-                        // Toggle selection
                         if selectedStyle == style {
                             selectedStyle = nil
                         } else {
@@ -71,18 +70,22 @@ struct FurnitureStyle: View {
                 }
 
                 Button(action: {
-                    // Define action for the "Next" button, possibly passing selectedStyle to the next page
+                    // Define action for the "Generate" button, possibly passing selectedStyle to the next page
                 }) {
-                    Text("Next")
-                        .font(.custom("Bebas Neue", size: 20))
-                        .frame(width: 185, height: 50)
-                        .background(selectedStyle == nil ? Color.gray : Color(red: 150/255, green: 110/255, blue: 65/255))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.black, lineWidth: 2)
-                        )
+                    HStack {
+                        Text("Generate")
+                            .font(.custom("Bebas Neue", size: 20))
+                            .foregroundColor(.black)
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.black)
+                    }
+                    .frame(width: 185, height: 50)
+                    .background(selectedStyle == nil ? Color.gray : Color.green)
+                    .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.black, lineWidth: 2)
+                    )
                 }
                 .disabled(selectedStyle == nil)
             }
@@ -94,7 +97,7 @@ struct FurnitureStyle: View {
     }
     
     var furnitureStyles: [String] {
-        return ["Modern", "Office", "Rustic","Industrial", "Traditional"]
+        return ["Modern", "Office", "Rustic", "Industrial", "Traditional"]
     }
 }
 
