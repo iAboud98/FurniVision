@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedOption: String? = nil
+
     var body: some View {
         ZStack {
             Color.white
@@ -46,7 +48,7 @@ struct ContentView: View {
 
                 HStack {
                     Button(action: {
-                        // Define button action here
+                        // Define action for the "Next" button
                     }) {
                         Text("Next")
                             .font(.custom("Bebas Neue", size: 20))
@@ -68,12 +70,16 @@ struct ContentView: View {
 
     func createButton(title: String) -> some View {
         Button(action: {
-            // Define button action here
+            if selectedOption == title {
+                selectedOption = nil
+            } else {
+                selectedOption = title
+            }
         }) {
             Text(title)
                 .font(.custom("Bebas Neue", size: 20))
                 .frame(width: 180, height: 120)
-                .background(Color.gray)
+                .background(selectedOption == title ? Color.green : Color.gray)
                 .foregroundColor(.black)
                 .cornerRadius(10)
                 .overlay(
