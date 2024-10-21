@@ -13,7 +13,7 @@ struct splashScreen: View {
         var body: some View {
             ZStack {
                 
-                Color.brown
+                Color.white
                     .edgesIgnoringSafeArea(.all)
                 
                 if self.isActive {
