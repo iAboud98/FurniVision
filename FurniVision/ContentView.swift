@@ -6,27 +6,6 @@
 //
 
 import SwiftUI
-import AVKit
-
-struct VideoPlayerView: View {
-    let player: AVPlayer
-
-    var body: some View {
-        VideoPlayer(player: player)
-            .frame(width: 100, height: 100)
-            .onAppear() {
-                player.play()
-                player.actionAtItemEnd = .none
-                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main) { _ in
-                    player.seek(to: .zero)
-                    player.play()
-                }
-            }
-            .onDisappear() {
-                NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
-            }
-    }
-}
 
 struct ContentView: View {
     var body: some View {
@@ -38,21 +17,17 @@ struct ContentView: View {
                 Text("Furnish Your Vision!")
                     .font(.custom("Bebas Neue", size: 50))
                     .foregroundColor(.black)
-                    .padding(.top,30)
-
-                // Add Video Player here
-                VideoPlayerView(player: AVPlayer(url: Bundle.main.url(forResource: "rocking-chair", withExtension: "mp4")!))
-                    
+                    .padding(.top, 30)
 
                 Spacer()
-                
+
                 Text("Explore your furniture options:")
                     .font(.custom("Bebas Neue", size: 20))
                     .foregroundColor(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 20)
                     .padding(0)
-                
+
                 Grid {
                     GridRow {
                         createButton(title: "Chair")
@@ -111,5 +86,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    splashScreen()
+    ContentView()
 }
