@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    // State to track the currently selected button
     @State private var selectedOption: String? = nil
 
     var body: some View {
@@ -61,6 +62,8 @@ struct ContentView: View {
                                     .stroke(Color.black, lineWidth: 2)
                             )
                     }
+                    .disabled(selectedOption == nil)  // Disable if no option is selected
+                    .opacity(selectedOption == nil ? 0.5 : 1.0)  // Change opacity when disabled
                     .padding(.horizontal)
                 }
                 .padding(.bottom, 20)
@@ -68,18 +71,21 @@ struct ContentView: View {
         }
     }
 
+    // Modify createButton to handle selection and deselection
     func createButton(title: String) -> some View {
         Button(action: {
             if selectedOption == title {
+                // If the button is already selected, deselect it
                 selectedOption = nil
             } else {
+                // Otherwise, select the new button
                 selectedOption = title
             }
         }) {
             Text(title)
                 .font(.custom("Bebas Neue", size: 20))
                 .frame(width: 180, height: 120)
-                .background(selectedOption == title ? Color.green : Color.gray)
+                .background(selectedOption == title ? Color.green : Color.gray)  // Change color when selected
                 .foregroundColor(.black)
                 .cornerRadius(10)
                 .overlay(
