@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FurnitureStyle: View {
     @State private var selectedStyle: String? = nil
-    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack {
@@ -22,7 +21,11 @@ struct FurnitureStyle: View {
             VStack(spacing: 20) {
                 ForEach(furnitureStyles, id: \.self) { style in
                     Button(action: {
-                        selectedStyle = style
+                        if selectedStyle == style {
+                            selectedStyle = nil
+                        } else {
+                            selectedStyle = style
+                        }
                     }) {
                         HStack {
                             Text(style)
@@ -31,12 +34,12 @@ struct FurnitureStyle: View {
                             Spacer()
                             if selectedStyle == style {
                                 Image(systemName: "checkmark")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.black)
                             }
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(selectedStyle == style ? Color.gray.opacity(0.2) : Color.white)
+                        .background(selectedStyle == style ? Color.green : Color.white) 
                         .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
@@ -51,7 +54,7 @@ struct FurnitureStyle: View {
 
             HStack {
                 Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    // Back button action
                 }) {
                     Text("Back")
                         .font(.custom("Bebas Neue", size: 20))
@@ -66,7 +69,7 @@ struct FurnitureStyle: View {
                 }
 
                 Button(action: {
-                    // Define action for the "Next" button, possibly passing selectedStyle to next page
+                    // Define action for the "Next" button, possibly passing selectedStyle to the next page
                 }) {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
@@ -96,3 +99,4 @@ struct FurnitureStyle: View {
 #Preview {
     FurnitureStyle()
 }
+
