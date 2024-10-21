@@ -4,28 +4,31 @@
 //
 //  Created by Aboud Fialah on 21/10/2024.
 //
+
 import SwiftUI
 
 struct ColorPage: View {
     var selectedOption: String?
-    
+
     @Environment(\.presentationMode) var presentationMode
     @State private var selectedColors: Set<Color> = []
 
     var body: some View {
         ZStack {
             Color.white
-                .ignoresSafeArea()
-            
+                .edgesIgnoringSafeArea(.all)
+
             VStack {
                 Text("You selected: \(selectedOption ?? "None")")
                     .font(.custom("Bebas Neue", size: 30))
+                    .foregroundColor(.black)
                     .padding()
-                
+
                 Spacer()
 
                 Text("Select Your Colors:")
                     .font(.custom("Bebas Neue", size: 24))
+                    .foregroundColor(.black)
                     .padding(.bottom, 10)
 
                 HStack {
@@ -129,3 +132,4 @@ struct ColorPage: View {
 #Preview {
     ColorPage(selectedOption: "Chair")
 }
+
