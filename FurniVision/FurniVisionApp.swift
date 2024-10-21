@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct FurniVisionApp: App {
+    @State private var isActive: Bool = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                if isActive {
+                    ContentView()
+                } else {
+                    splashScreen(isActive: $isActive)
+                }
+            }
         }
     }
 }
