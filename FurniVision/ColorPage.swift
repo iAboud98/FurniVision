@@ -11,7 +11,7 @@ struct ColorPage: View {
     var selectedOption: String?
     
     @Environment(\.presentationMode) var presentationMode
-    @State private var selectedColor: Color = .clear // Default color
+    @State private var selectedColors: Set<Color> = []
 
     var body: some View {
         VStack {
@@ -21,18 +21,26 @@ struct ColorPage: View {
             
             Spacer()
 
-            // Prompt text for selecting colors
             Text("Select Your Colors:")
                 .font(.custom("Bebas Neue", size: 24))
                 .padding(.bottom, 10)
 
-            // Display the selected color
-            Circle()
-                .fill(selectedColor)
-                .frame(width: 100, height: 100)
-                .padding()
+            HStack {
+                ForEach(Array(selectedColors), id: \.self) { color in
+                    Circle()
+                        .fill(color)
+                        .frame(width: 50, height: 50)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.black, lineWidth: 3)
+                        )
+                        .onTapGesture {
+                            selectedColors.remove(color)
+                        }
+                }
+            }
+            .padding(.bottom, 40)
 
-            // Color buttons divided into two rows
             VStack {
                 HStack {
                     colorButton(color: .red)
@@ -47,11 +55,11 @@ struct ColorPage: View {
                 HStack {
                     colorButton(color: .pink)
                     colorButton(color: .gray)
-                    colorButton(color: .black) // Added black
+                    colorButton(color: .black)
                 }
                 HStack {
-                    colorButton(color: .white) // Added white
-                    colorButton(color: Color(red: 150/255, green: 110/255, blue: 65/255)) // Brown color
+                    colorButton(color: .white)
+                    colorButton(color: Color(red: 150/255, green: 110/255, blue: 65/255))
                 }
             }
             .padding()
@@ -65,7 +73,7 @@ struct ColorPage: View {
                     Text("Back")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
-                        .background(Color(red: 150/255, green: 110/255, blue: 65/255)) // Brown color
+                        .background(Color(red: 150/255, green: 110/255, blue: 65/255))
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         .overlay(
@@ -77,12 +85,11 @@ struct ColorPage: View {
 
                 Button(action: {
                     // Define action for the "Next" button
-                    // Use navigation logic to go to the next page
                 }) {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
-                        .background(Color(red: 150/255, green: 110/255, blue: 65/255)) // Brown color
+                        .background(Color(red: 150/255, green: 110/255, blue: 65/255))
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         .overlay(
@@ -97,17 +104,21 @@ struct ColorPage: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 
-    // Function to create color buttons
+    
     func colorButton(color: Color) -> some View {
         Button(action: {
-            selectedColor = color // Set the selected color
+            if selectedColors.contains(color) {
+                selectedColors.remove(color)
+            } else if selectedColors.count < 3 {
+                selectedColors.insert(color)
+            }
         }) {
             Circle()
                 .fill(color)
                 .frame(width: 50, height: 50)
                 .overlay(
                     Circle()
-                        .stroke(Color.black, lineWidth: 2) // Border for visibility
+                        .stroke(selectedColors.contains(color) ? Color.green : Color.black, lineWidth: 4)
                 )
         }
     }
