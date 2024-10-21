@@ -9,19 +9,52 @@ import SwiftUI
 
 struct ColorPage: View {
     var selectedOption: String?
-
+    
     @Environment(\.presentationMode) var presentationMode
+    @State private var selectedColor: Color = .clear // Default color
 
     var body: some View {
         VStack {
             Text("You selected: \(selectedOption ?? "None")")
                 .font(.custom("Bebas Neue", size: 30))
                 .padding()
-
+            
             Spacer()
 
-            Text("This is the color page!")
-                .font(.custom("Bebas Neue", size: 25))
+            // Prompt text for selecting colors
+            Text("Select Your Colors:")
+                .font(.custom("Bebas Neue", size: 24))
+                .padding(.bottom, 10)
+
+            // Display the selected color
+            Circle()
+                .fill(selectedColor)
+                .frame(width: 100, height: 100)
+                .padding()
+
+            // Color buttons divided into two rows
+            VStack {
+                HStack {
+                    colorButton(color: .red)
+                    colorButton(color: .green)
+                    colorButton(color: .blue)
+                }
+                HStack {
+                    colorButton(color: .yellow)
+                    colorButton(color: .orange)
+                    colorButton(color: .purple)
+                }
+                HStack {
+                    colorButton(color: .pink)
+                    colorButton(color: .gray)
+                    colorButton(color: .black) // Added black
+                }
+                HStack {
+                    colorButton(color: .white) // Added white
+                    colorButton(color: Color(red: 150/255, green: 110/255, blue: 65/255)) // Brown color
+                }
+            }
+            .padding()
 
             Spacer()
 
@@ -49,7 +82,7 @@ struct ColorPage: View {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
-                        .background(Color(red: 150/255, green: 110/255, blue: 65/255))
+                        .background(Color(red: 150/255, green: 110/255, blue: 65/255)) // Brown color
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         .overlay(
@@ -60,12 +93,26 @@ struct ColorPage: View {
             }
             .padding(.bottom, 20)
         }
+        .navigationTitle("Color Page")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true) 
+    }
+
+    // Function to create color buttons
+    func colorButton(color: Color) -> some View {
+        Button(action: {
+            selectedColor = color // Set the selected color
+        }) {
+            Circle()
+                .fill(color)
+                .frame(width: 50, height: 50)
+                .overlay(
+                    Circle()
+                        .stroke(Color.black, lineWidth: 2) // Border for visibility
+                )
+        }
     }
 }
 
 #Preview {
     ColorPage(selectedOption: "Chair")
 }
-
