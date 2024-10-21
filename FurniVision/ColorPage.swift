@@ -83,9 +83,7 @@ struct ColorPage: View {
                 }
                 .padding(0)
 
-                Button(action: {
-                    // Define action for the "Next" button
-                }) {
+                NavigationLink(destination: FurnitureStyle()) {
                     Text("Next")
                         .font(.custom("Bebas Neue", size: 20))
                         .frame(width: 185, height: 50)
@@ -128,3 +126,4 @@ struct ColorPage: View {
 #Preview {
     ColorPage(selectedOption: "Chair")
 }
+
